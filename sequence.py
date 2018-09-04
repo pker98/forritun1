@@ -10,8 +10,8 @@ tala2 = 2
 tala3 = 3
 
 for i in range(1, n+1): 
-    if i == 1:
-        print(i)
+    if i == 1:      #Ef i(talan) er jafnt og 1, 2 eða 3 þá
+        print(i)    #skrifast það út og for loopan heldur áfram efst
         continue
     elif i == 2:
         print(i)
@@ -19,11 +19,11 @@ for i in range(1, n+1):
     elif i == 3:
         print(i)
         continue
-    sum = (tala1 + tala2 + tala3)
-    tala1 = tala2
+    sum = (tala1 + tala2 + tala3)   #Summan verður jafnt og 3 síðustu
+    tala1 = tala2                   #tölur lagðar saman
     tala2 = tala3
-    tala3 = sum
-    print(sum)
+    tala3 = sum                     #Næstu summa verður jafnt og 
+    print(sum)                      #fyrri 3 tölur á undan
 
 
 
